@@ -94,12 +94,20 @@ export NVM_DIR="$HOME/.nvm"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
-alias nv='nvim'
-alias tm='tmux'
-
 export C=""
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
 source ~/scripts/agent-bridge.sh
 eval "$(starship init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+
+# all alias
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+alias nv='nvim'
+alias tm='tmux'
+alias ls='lsd'
+alias l='lsd -l'
+alias la='lsd -a'
+alias lla='lsd -la'
+alias lt='lsd --tree'
+alias cat='bat'

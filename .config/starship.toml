@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = """[](peach)$directory[ ](peach)$character"""
-right_format="""[](fg:yellow)$git_branch$git_status[ ](fg:yellow)[](fg:green)$nodejs$php[ ](fg:green)"""
+format = """[](peach)$directory[](peach)$character"""
+right_format="""[](fg:yellow)$git_branch$git_status[](fg:yellow)[](fg:green)$nodejs$php[](fg:green)"""
 
 palette = 'catppuccin_mocha'
 
